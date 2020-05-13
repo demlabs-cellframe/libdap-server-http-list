@@ -7,7 +7,7 @@ file (GLOB SERVER_HTTP_LIST_HEADERS server_list.h)
 add_library(${PROJECT_NAME} STATIC ${SERVER_HTTP_LIST_HEADERS} ${SERVER_HTTP_LIST_SRCS})
 
 target_link_libraries(
-    dap_mod_serverlist
+    dap_server_http_list
     dap_core
     dap_crypto 
     dap_http_server
